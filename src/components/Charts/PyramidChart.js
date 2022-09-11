@@ -50,7 +50,7 @@ const PyramidChart = ({ height, width }) => {
                   position: 'Inside',
                   name: 'text',
                   font: {
-                     color: '#333'
+                     color: darkMode === 'dark' ? 'white' : '#333'
                   }
                }}
             />
