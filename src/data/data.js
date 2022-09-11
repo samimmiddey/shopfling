@@ -24,11 +24,27 @@ import product6 from './product6.jpg';
 import product7 from './product7.jpg';
 import headphones from './headphones.jpg';
 import speakers from './speakers.jpg';
-import img1 from './img1.jpg'
-import img2 from './img2.jpg'
-import img3 from './img3.jpg'
-import img4 from './img4.jpg'
-import img5 from './img5.jpg'
+import img1 from './img1.jpg';
+import img2 from './img2.jpg';
+import img3 from './img3.jpg';
+import img4 from './img4.jpg';
+import img5 from './img5.jpg';
+import skincare from './skincare.jpg';
+import fruits from './fruits.jpg';
+import fastfood from './fastfood.jpg';
+import shampoo from './shampoo.jpg';
+import dove from './dove.jpg';
+import jeans from './jeans.jpg';
+import casio from './casio.jpg';
+import sunglasses from './sunglasses.jpg';
+import macbook from './macbook.jpg';
+import sony from './sony.jpg';
+import iphone from './iphone.jpg';
+import tws from './tws.jpg';
+import controller from './controller.jpg';
+import dslr from './dslr.jpg';
+import perfume from './perfume.jpg';
+import earpods from './earpods.jpg';
 import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import DraftsOutlinedIcon from '@mui/icons-material/DraftsOutlined';
@@ -2842,133 +2858,133 @@ export const ordersData = [
 
 export const ProductCardData = [
    {
-      img: 'https://source.unsplash.com/PDX_a_82obo',
+      img: headphones,
       name: 'Soundcore Q30',
       ratingDetails: '(12.99+)',
       price: '$82.99',
       discount: '$16.99'
    },
    {
-      img: 'https://source.unsplash.com/MEsWk-dZzlI',
+      img: skincare,
       name: 'Lakme Skincare',
       ratingDetails: '(15.99+)',
       price: '$35.99',
       discount: '$9.99'
    },
    {
-      img: 'https://source.unsplash.com/ArGvQkA7iOw',
+      img: fruits,
       name: 'Fresh Fruits',
       ratingDetails: '(20.99+)',
       price: '$18.99',
       discount: '$3.99'
    },
    {
-      img: 'https://source.unsplash.com/164_6wVEHfI',
+      img: product4,
       name: 'Nike Sneakers',
       ratingDetails: '(81.99+)',
       price: '$66.99',
       discount: '$11.99'
    },
    {
-      img: 'https://source.unsplash.com/2cFZ_FB08UM',
+      img: product3,
       name: 'Apple Watch',
       ratingDetails: '(69.99+)',
       price: '$499.99',
       discount: '$33.99'
    },
    {
-      img: 'https://source.unsplash.com/I7A_pHLcQK8',
+      img: fastfood,
       name: 'Fast Food',
       ratingDetails: '(22.99+)',
       price: '$19.99',
       discount: '$5.99'
    },
    {
-      img: 'https://source.unsplash.com/dah-jZWgzx8',
+      img: shampoo,
       name: 'Beer Shampoo',
       ratingDetails: '(38.99+)',
       price: '$9.99',
       discount: '$1.99'
    },
    {
-      img: 'https://source.unsplash.com/6LBBOwkPzyQ',
+      img: dove,
       name: 'Dove Lotion',
       ratingDetails: '(18.99+)',
       price: '$26.99',
       discount: '$7.99'
    },
    {
-      img: 'https://source.unsplash.com/3oejsU5OQVk',
+      img: jeans,
       name: 'Killer Jeans',
       ratingDetails: '(53.99+)',
       price: '$77.99',
       discount: '$25.99'
    },
    {
-      img: 'https://source.unsplash.com/eZFPIyjJQxM',
+      img: casio,
       name: 'Casio Watch',
       ratingDetails: '(29.99+)',
       price: '$179.99',
       discount: '$15.99'
    },
    {
-      img: 'https://source.unsplash.com/W6wKfTs5Rxc',
+      img: earpods,
       name: 'Apple Earpods',
       ratingDetails: '(33.99+)',
       price: '$299.99',
       discount: '$9.99'
    },
    {
-      img: 'https://source.unsplash.com/3xtCeUhqZWE',
+      img: sunglasses,
       name: 'Rayban Sunglasses',
       ratingDetails: '(28.99+)',
       price: '$65.99',
       discount: '$12.99'
    },
    {
-      img: 'https://source.unsplash.com/w4xdt5o9Fs4',
+      img: macbook,
       name: 'Apple Macbook',
       ratingDetails: '(23.99+)',
       price: '$2599.99',
       discount: '$75.99'
    },
    {
-      img: 'https://source.unsplash.com/YDZPdqv3FcA',
+      img: sony,
       name: 'Sony Headphones',
       ratingDetails: '(39.99+)',
       price: '$355.99',
       discount: '$25.99'
    },
    {
-      img: 'https://source.unsplash.com/DIp71kvwXhU',
+      img: iphone,
       name: 'Apple iPhone',
       ratingDetails: '(17.99+)',
       price: '$999.99',
       discount: '$99.99'
    },
    {
-      img: 'https://source.unsplash.com/zRTe1gTQk34',
+      img: tws,
       name: 'Jabra TWS',
       ratingDetails: '(53.99+)',
       price: '$75.99',
       discount: '$9.99'
    },
    {
-      img: 'https://source.unsplash.com/6Y4n49g7k9c',
+      img: controller,
       name: 'Sony Controller',
       ratingDetails: '(41.99+)',
       price: '$199.99',
       discount: '$21.99'
    },
    {
-      img: 'https://source.unsplash.com/gGgoDJRD2WM',
+      img: dslr,
       name: 'Canon DSLR',
       ratingDetails: '(7.99+)',
       price: '$1599.99',
       discount: '$59.99'
    },
    {
-      img: 'https://source.unsplash.com/_3cLB_mvVTw',
+      img: perfume,
       name: 'Intensely Perfume',
       ratingDetails: '(19.99+)',
       price: '$145.99',
