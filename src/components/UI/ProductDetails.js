@@ -129,9 +129,12 @@ const ProductDetails = ({ id }) => {
                               <Button
                                  sx={{
                                     fontSize: '10px',
-                                    backgroundColor: darkMode === 'dark' ? '#cae8cc' : '#e8f5e9',
-                                    color: '#66bb6a',
-                                    marginBottom: '10px'
+                                    backgroundColor: darkMode === 'dark' ? '#53c68c' : '#e8f5e9',
+                                    color: darkMode === 'dark' ? 'white' : '#66bb6a',
+                                    marginBottom: '10px',
+                                    '&:hover': {
+                                       backgroundColor: darkMode === 'dark' ? '#53c68c' : '#e8f5e9'
+                                    }
                                  }}
                               >
                                  In Stock
@@ -144,6 +147,9 @@ const ProductDetails = ({ id }) => {
                                     minHeight: 0,
                                     minWidth: 0,
                                     padding: '8px 10px',
+                                    '&:hover': {
+                                       backgroundColor: '#eceff1'
+                                    },
                                     [theme.breakpoints.down('sm')]: {
                                        padding: '5px 7px'
                                     }
@@ -267,7 +273,7 @@ const ProductDetails = ({ id }) => {
                <ProductCardTabs
                   product={product}
                />
-            </Card>
+            </Card >
          }
       </>
    );
