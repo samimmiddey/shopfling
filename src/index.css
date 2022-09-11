@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fafbfb;
+}
+
+body.dark {
+  background-color: #16181d;
+}
+
+a,
+li,
+ul {
+  text-decoration: none;
+  color: #333;
+}
+
+::placeholder {
+  color: #a19fad;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.container {
+  padding: 1rem 2rem;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    padding: 8px 0;
+  }
+}
+
+/* Card Styles */
+.card-padding {
+  padding: 30px 30px 35px 30px;
+}
+
+@media screen and (max-width: 650px) {
+  .card-padding {
+    padding: 25px 25px 30px 25px;
+  }
+}
+
+/* Select Dropdown Menu Box Shadow */
+.css-5258rk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Fit the splinearea chart to it's container */
+.spline-area .e-control,
+.spline-area .e-chart,
+.spline-area .e-lib,
+.spline-area .e-touch {
+  height: 175px;
+}
+
+/* Text Wrap */
+.text-wrap,
+.mail-text-wrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.mail-text-wrap {
+  -webkit-line-clamp: 1;
+}
+
+/* Compose Mail Modal */
+.compose-mail-modal {
+  animation: slide-up 200ms ease-out forwards;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translate(-50%, 50%);
+  }
+
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Color Picker Pen */
+@media screen and (max-width: 950px) {
+  #preview {
+    width: 350px
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #preview {
+    width: 250px
+  }
+}
