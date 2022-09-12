@@ -46,7 +46,7 @@ const UserProfileFeed = ({ userData, currentColor }) => {
 
    const feedData = [
       {
-         time: '35 minutes ago',
+         time: '25 minutes ago',
          postText: <Typography sx={{ color: 'text.secondary', fontSize: '14px' }}>Check out some kick ass web projects to get some insights and try building your own <span style={{ color: currentColor }}>#web development trends#web trends</span> check out - https://samimmiddey.netlify.app</Typography>,
          postImg: postImg
       },
@@ -97,7 +97,7 @@ const UserProfileFeed = ({ userData, currentColor }) => {
                            {userData.name}
                         </Typography>
                         <Typography sx={{ fontSize: '13px', color: 'text.secondary' }}>
-                           25 minutes ago
+                           {item.time}
                         </Typography>
                      </Box>
                   </Box>

@@ -86,11 +86,11 @@ export default function Navigation() {
             onClick={() => setMenu(false)}
             open={menu}
             sx={theme => ({
-               display:
-                  { x: 'block', lg: 'none' },
+               display: 'none',
                zIndex: 99,
                [theme.breakpoints.down('lg')]: {
-                  zIndex: 99999999
+                  zIndex: 99999999,
+                  display: 'block'
                }
             })}
          />
@@ -134,6 +134,7 @@ export default function Navigation() {
                   >
                      <Link to='/'>
                         <Box
+                           onClick={() => lgWidth && setMenu(false)}
                            sx={{
                               display: 'flex',
                               alignItems: 'center',
@@ -174,8 +175,13 @@ export default function Navigation() {
                               fontWeight: 600,
                               color: 'text.disabled',
                               padding: '10px 0 10px 2rem',
+                              transition: '300ms ease',
+                              [theme.breakpoints.down('lg')]: {
+                                 opacity: 1,
+                                 padding: menu ? '10px 0 10px 2rem' : '10px 0 10px 16px'
+                              },
                               [theme.breakpoints.down('sm')]: {
-                                 paddingLeft: '1.5rem'
+                                 paddingLeft: menu ? '1.5rem' : '8px'
                               }
                            })}
                         >
@@ -219,7 +225,8 @@ export default function Navigation() {
                                     px: 3,
                                     transition: '300ms ease',
                                     [theme.breakpoints.down('lg')]: {
-                                       justifyContent: 'initial'
+                                       justifyContent: 'initial',
+                                       // margin: '5px 10px 5px 24px'
                                     },
                                     [theme.breakpoints.down('sm')]: {
                                        px: 2
@@ -233,13 +240,16 @@ export default function Navigation() {
                                  })}
                               >
                                  <ListItemIcon
-                                    sx={{
+                                    sx={theme => ({
                                        minWidth: 0,
                                        mr: menu ? 3 : 'auto',
                                        justifyContent: 'center',
                                        color: pathname === (link.name === 'analytics' ? '/' : link.name === 'user profile' ? '/userprofile' : `/${link.name}`) ? 'white' : pathname === `/products/${productID}` && link.name === 'products' ? 'white' :
-                                          pathname === `/customers/${customerID}` && link.name === 'customers' ? 'white' : 'text.secondary'
-                                    }}
+                                          pathname === `/customers/${customerID}` && link.name === 'customers' ? 'white' : 'text.secondary',
+                                       [theme.breakpoints.down('lg')]: {
+                                          mr: 3
+                                       }
+                                    })}
                                  >
                                     {link.icon}
                                  </ListItemIcon>
@@ -249,11 +259,14 @@ export default function Navigation() {
                                           {link.name.split(' ').map(item => item.charAt(0).toUpperCase() + item.slice(1)).join(' ')}
                                        </Typography>
                                     }
-                                    sx={{
+                                    sx={theme => ({
                                        opacity: menu ? 1 : 0,
                                        color: pathname === (link.name === 'analytics' ? '/' : link.name === 'user profile' ? '/userprofile' : `/${link.name}`) ? 'white' : pathname === `/products/${productID}` && link.name === 'products' ? 'white' :
-                                          pathname === `/customers/${customerID}` && link.name === 'customers' ? 'white' : 'text.secondary'
-                                    }}
+                                          pathname === `/customers/${customerID}` && link.name === 'customers' ? 'white' : 'text.secondary',
+                                       [theme.breakpoints.down('lg')]: {
+                                          opacity: 1
+                                       }
+                                    })}
                                  />
                               </ListItemButton>
                            </NavLink>

@@ -21,7 +21,7 @@ const ChatDarwer = () => {
             open={chatMenu}
             onClose={() => toggleChatMenu()}
             sx={{
-               zIndex: 99,
+               zIndex: 101,
                "& .MuiDrawer-paper": {
                   borderWidth: 0,
                   boxShadow: '0 0 50px rgba(0, 0, 0, 0.075)'
@@ -31,7 +31,7 @@ const ChatDarwer = () => {
             <Box sx={{ width: '256px' }}>
                <Box
                   sx={{
-                     padding: '90px 1rem 1rem 1rem',
+                     padding: '1rem',
                      borderBottom: darkMode === 'dark' ? '1px solid rgba(255, 255, 255, 0.12)' : '1px solid rgba(0, 0, 0, 0.12)'
                   }}
                >

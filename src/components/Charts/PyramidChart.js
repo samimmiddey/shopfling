@@ -38,7 +38,7 @@ const PyramidChart = ({ height, width }) => {
                xName="x"
                yName="y"
                type="Pyramid"
-               width={xsWidth ? '80%' : '45%'}
+               width={xsWidth ? '75%' : '45%'}
                height="80%"
                neckWidth="15%"
                gapRatio={0.03}

@@ -30,7 +30,7 @@ const ChartPage = ({ title, marginBottom, Chart }) => {
                   },
                   [theme.breakpoints.down('sm')]: {
                      fontSize: '1.5rem',
-                     marginBottom: '1.5rem'
+                     marginBottom: marginBottom === '1rem' ? '0' : '2.5rem'
                   }
                })}
             >
